@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/background"
+    tools:context="com.example.hemant.sharedlock.OwnerSignup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/un"
+        android:text="Username"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/login"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/un"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nm"
+        android:layout_below="@+id/username"
+        android:text="Name"
+        android:layout_marginLeft="10dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/nm"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/em"
+        android:layout_below="@+id/name"
+        android:text="Email"
+        android:layout_marginLeft="10dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/em"
+        android:inputType="textEmailAddress"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pw"
+        android:layout_below="@+id/email"
+        android:text="Password"
+        android:layout_marginLeft="10dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/pw"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cn"
+        android:layout_below="@+id/password"
+        android:text="Contact"
+        android:layout_marginLeft="10dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/contact"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/cn"
+        android:inputType="phone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:text="Sign up"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#D2691E"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/signup"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

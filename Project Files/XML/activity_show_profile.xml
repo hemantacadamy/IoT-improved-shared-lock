@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.hemant.sharedlock.ShowProfile">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/back"
+        android:id="@+id/photo"
+        android:text=""
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/un"
+        android:textSize="20dp"
+        android:text="Name:"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/un"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/em"
+        android:textSize="20dp"
+        android:text="Email:"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/em"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cn"
+        android:text="Contact:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/em"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/contact"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/cn"
+        android:layout_below="@+id/em"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="    "
+        android:background="@drawable/call"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/call"
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="    "
+        android:background="@drawable/sms"
+        android:layout_toRightOf="@+id/call"
+        android:layout_below="@id/contact"
+        android:id="@+id/sms"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="    "
+        android:background="@drawable/whatsapp"
+        android:layout_toRightOf="@+id/sms"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="10dp"
+        android:id="@+id/whatsapp"
+        android:layout_marginLeft="70dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.hemant.sharedlock.OwnerActivity$PlaceholderFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate random key"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#D2691E"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/generate"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/random"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/generate"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter"
+        android:text="Enter Contact Number"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/random"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/contact"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/enter"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="    "
+        android:background="@drawable/call"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/call"
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="    "
+        android:background="@drawable/sms"
+        android:layout_toRightOf="@+id/call"
+        android:layout_below="@id/contact"
+        android:id="@+id/sms"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="    "
+        android:background="@drawable/whatsapp"
+        android:layout_toRightOf="@+id/sms"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="10dp"
+        android:id="@+id/whatsapp"
+        android:layout_marginLeft="70dp"
+        />
+
+</RelativeLayout>
